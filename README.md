@@ -1,4 +1,4 @@
-# Video Eraser Research Pipeline
+# Video Eraser Pipeline
 
 This repo bundles a reproducible workflow for removing a target object from video:
 
@@ -119,7 +119,7 @@ Below commands assume a source video at `data/raw/videos/moose.mp4`.
    ```
    Use `--dry_run` if you only want tracking + mask generation.
 
-### Optional Post-processing (Ghosting Suppression)
+### Post-processing (Ghosting Suppression)
 
 Residual flicker can be reduced via the temporal smoother, which registers neighboring frames (ECC) and blends them with Gaussian weights. You can restrict blending to the mask region or apply it globally:
 
@@ -138,15 +138,13 @@ DiffuEraser expects the binary mask video to have the **exact** same frame count
 
 ## Moose Removal Demo
 
-Add lightweight clips to `docs/media/` (see `docs/media/README.md`). GitHub
-sometimes blocks inline `<video>` tags, so GIF previews are embedded below while
-the original MP4s remain available for download.
+The following demo video is from Prof. Rachel Mayeri and Prof. Calden Wloka.
 
 | Before (original Moose) | After (Moose removed) |
 | --- | --- |
 | <img src="docs/media/moose_before.gif?raw=1" width="420" alt="Moose before" /> <br> [download MP4](docs/media/moose_before.mp4?raw=1) | <img src="docs/media/moose_after.gif?raw=1" width="420" alt="Moose after" /> <br> [download MP4](docs/media/moose_after.mp4?raw=1) |
 
-## Publishing Checklist
+## Pushing Checklist
 
 1. Confirm only lightweight assets are tracked: `git status`.
 2. Commit & push:
@@ -156,7 +154,3 @@ the original MP4s remain available for download.
    git push origin main
    ```
 3. Keep large datasets, checkpoints, and videos under `data/` or `outputs/` (ignored by Git). Only tiny demo clips live under `docs/media/`.
-
-## License
-
-Add your preferred license text here before publishing (MIT, Apache-2.0, etc.). Meanwhile, respect the licenses of OSTrack, SAM2, DiffuEraser, Propainter, and Stable-Diffusion when redistributing their assets.

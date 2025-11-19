@@ -51,6 +51,10 @@ generation utilities and optional OSTrack-based tracking experiments.
 
 ## Moose Removal Demo
 
+Add lightweight clips to `docs/media/` (see `docs/media/README.md`). GitHub only
+renders the `<video>` tag when the file is accessed via `?raw=1`, so keep the
+filenames below and make sure they remain small enough for fast loading:
+
 <table>
   <tr>
     <th>Before (original Moose)</th>
@@ -58,12 +62,12 @@ generation utilities and optional OSTrack-based tracking experiments.
   </tr>
   <tr>
     <td>
-      <video src="docs/media/moose_before.mp4" controls width="320">
+      <video src="docs/media/moose_before.mp4?raw=1" controls width="320">
         Your browser does not support embedded videos.
       </video>
     </td>
     <td>
-      <video src="docs/media/moose_after.mp4" controls width="320">
+      <video src="docs/media/moose_after.mp4?raw=1" controls width="320">
         Your browser does not support embedded videos.
       </video>
     </td>

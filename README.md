@@ -62,12 +62,12 @@ filenames below and make sure they remain small enough for fast loading:
   </tr>
   <tr>
     <td>
-      <video src="docs/media/moose_before.mp4?raw=1" controls width="320">
+      <video src="docs/media/moose_before.gif?raw=1" controls width="320">
         Your browser does not support embedded videos.
       </video>
     </td>
     <td>
-      <video src="docs/media/moose_after.mp4?raw=1" controls width="320">
+      <video src="docs/media/moose_after.gif?raw=1" controls width="320">
         Your browser does not support embedded videos.
       </video>
     </td>

@@ -51,10 +51,6 @@ generation utilities and optional OSTrack-based tracking experiments.
 
 ## Moose Removal Demo
 
-Add lightweight clips to `docs/media/` (see `docs/media/README.md`). Once
-`moose_before.mp4` and `moose_after.mp4` are present, GitHub will display the
-embedded comparison below:
-
 <table>
   <tr>
     <th>Before (original Moose)</th>

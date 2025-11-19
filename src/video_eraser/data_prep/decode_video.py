@@ -16,7 +16,7 @@ def decode_video(video_path, output_dir, fps=None, scale=None):
 
     cmd = ["ffmpeg", "-i", video_path]
 
-    # Optional filters
+    # filters
     vf_filters = []
     if fps:
         vf_filters.append(f"fps={fps}")

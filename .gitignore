@@ -55,5 +55,6 @@ docs/media/**
 
 # Third-party heavyweight code (fetch separately)
 third_party/OSTrack/
+third_party/DiffuEraser/
 !third_party/README.md
 

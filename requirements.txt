@@ -1,3 +1,7 @@
 numpy>=1.24
 opencv-python>=4.9
+pandas>=2.1
+tqdm>=4.66
+moviepy>=2.0
+sam2>=1.1.0
 

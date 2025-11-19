@@ -119,6 +119,19 @@ Below commands assume a source video at `data/raw/videos/moose.mp4`.
    ```
    Use `--dry_run` if you only want tracking + mask generation.
 
+### Optional Post-processing (Ghosting Suppression)
+
+Residual flicker can be reduced via the temporal smoother, which registers neighboring frames (ECC) and blends them with Gaussian weights. You can restrict blending to the mask region or apply it globally:
+
+```bash
+python -m video_eraser.postprocess.temporal_smoothing \
+    --video outputs/videos/diffueraser_result.mp4 \
+    --mask data/processed/masks/moose_sam2.mp4 \
+    --window 5 --sigma 1.2 --strength 0.8
+```
+
+The Moose demo below already uses `window=5`, `sigma=1.2`, `strength=0.8` without a mask to tone down the most obvious ghosting.
+
 ### Alignment Reminder
 
 DiffuEraser expects the binary mask video to have the **exact** same frame count, fps, and resolution as the input video. The `sam2_mask_generator` enforces this, and `video_eraser.utils.video_checks.assert_same_video_geometry` is called right before launching DiffuEraser.

@@ -57,7 +57,7 @@ the original MP4s remain available for download.
 
 | Before (original Moose) | After (Moose removed) |
 | --- | --- |
-| ![Moose before](docs/media/moose_before.gif?raw=1) <br> [download MP4](docs/media/moose_before.mp4?raw=1) | ![Moose after](docs/media/moose_after.gif?raw=1) <br> [download MP4](docs/media/moose_after.mp4?raw=1) |
+| <img src="docs/media/moose_before.gif?raw=1" width="420" alt="Moose before" /> <br> [download MP4](docs/media/moose_before.mp4?raw=1) | <img src="docs/media/moose_after.gif?raw=1" width="420" alt="Moose after" /> <br> [download MP4](docs/media/moose_after.mp4?raw=1) |
 
 ## GitHub Publishing Checklist
 

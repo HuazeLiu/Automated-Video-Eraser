@@ -51,6 +51,7 @@ docs/media/**
 !docs/media/.gitkeep
 !docs/media/README.md
 !docs/media/*.mp4
+!docs/media/*.gif
 
 # Third-party heavyweight code (fetch separately)
 third_party/OSTrack/
